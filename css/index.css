@@ -56,6 +56,7 @@ html {
     min-width: 428px;
     width: 100%;
     font-size: 62.5%;
+    margin:0;
 }
 
 body {
@@ -69,6 +70,7 @@ h1, h2, h3, h4, h5, h6, p, a, i {
 
 h1 {
     font-size: 7.5rem;
+    color: white;
 }
 
 h2 {
@@ -85,17 +87,62 @@ p, a {
 
 /* header section */
 header {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
     width: 100%;
     height: 100vh;
-    background-image: url('../img/home-header.jpg');
+    background-image: url('home-header.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color:rgb(225, 239, 230);
-    background:rgb(0, 4, 17) ;
-    background-color:rgb(0, 4, 17, .8) ;
+    color: rgb(225, 239, 230);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+div{
+    box-shadow: ;
 }
 
+h1 a{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    text-align: center;
+    gap: 20px;
+    color:white;
+    font-size:50px;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap:30px;
+}
+nav a{
+    display: flex;
+    gap:30px;
+    font-size: 30px;
+    color:white;
+}
+.menu-links{
+    display: flex;
+    justify-content: space-around;
+    gap:30px;
+}
+.menu-links a{
+display: flex;
+gap:20px;
+}
+
+div.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    
+}
+social-links a{
+    color: white;
+}
 /* spacers */
 .spacer {
     width: 100%;
@@ -117,7 +164,22 @@ header {
     color:rgb(225, 239, 230);
     background:rgb(0, 4, 17) ;
 }
-
+.gallery h2{
+    margin:0;
+    padding-top: 20px;
+    font-size: 4rem;
+}
+.gallery div{
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+    justify-content: center;
+}
+.gallery img{
+    width:30%;
+    height:auto;
+    object-fit: cover;
+}
 /* about us section */
 .about {
     width: 100%;
@@ -140,8 +202,15 @@ header {
 
 .about h2 {
     width: 100%;
+    color: white;
 }
-
+.text h3{
+    color:white;
+}
+.text p{
+    color:white;
+    
+}
 .about-container .text {
     width: 50%;
 }
@@ -164,14 +233,18 @@ header {
 
 .contact h2 {
     padding-top: 5vh;
+    color:white;
 }
 
 .contact h3 {
     padding-top: 2.5vh;
+    color:white;
 }
 
 .contact p {
     padding: .5vh 0;
+    color:white;
+    
 }
 
 .info {
@@ -192,11 +265,18 @@ header {
 .contacts {
     width: 25%;
 }
-
+div a{
+    color:white;
+}
 /* footer section */
 footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: space-evenly;
+    align-items: flex-end;
     width: 100%;
-    height: 15vh;
+    height: 30vh;
     padding-top: 2.5vh;
     font-size: 3rem;
     color:rgb(225, 239, 230);
@@ -204,6 +284,22 @@ footer {
     background-color:rgb(0, 4, 17, .8) ;
 }
 
+footer .email-signup{
+    display: flex;
+    gap: 10px;
+}
+footer .footer-nav{
+    display: flex;
+    gap:15px;
+}
+footer .footer-nav a{
+    color:white;
+    text-align: right;
+
+}
+footer p{
+font-size: 5px;
+}
 /* mobile media query */
 @media (max-width: 428px) {
     /* header section */
