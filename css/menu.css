@@ -19,7 +19,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 100%;  
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -48,7 +48,7 @@ table {
 }
 
 * {
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
 
 html {
@@ -212,7 +212,7 @@ footer {
     font-size: 3rem;
     display: flex;
     justify-content: center;
-    background-color: ;
+    background-color: black;
 }
 
 footer .join-us{
@@ -221,7 +221,7 @@ footer .join-us{
 }
 footer .footer-right{
     width: 60%;
-    background-color:;
+    background-color:black;
 }
 .footer-top a{
     padding: 10px;
@@ -233,23 +233,106 @@ div span{
 /* mobile media query */
 @media (max-width: 428px) {
     /* header section */
+    html{
+        font-size: 50%;
+    }
+    body{
+        padding: 10px;
+    }
+    h1{
+        font-size: 3rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    h3{
+        font-size: 2rem;
+    }
+    h4{
+        font-size: 1.5rem;
+    }
+    p, a{
+        font-size: 1.5rem;
+    }
+    .menu{
+        width: 100%;
+        max-width: none;
+        padding: 20px;
+        background-image: none;
+    }
+    .menu-item{
+        width: 100%;
+        font-size: 1.2rem;
+    }
+    .menu-item h3{
+        font-size: 1.3rem;
+    }
+    .menu-item p{
+        font-size: 1rem;
+    }
+    .menu-item .price{
+        font-size: 1.5rem;
+    }
+    footer{
+        height: auto;
+        font-size: 2rem;
+        padding-top: 2.5vh;
+    }
+
     .header-title {
         width: 75%;
         margin: 0 auto;
         text-align: center;
         font-size: 4rem;
     }
-
-    /* menu */
-    .menu {
-        background-image: none;
-
+}
+    
+@media(max-width: 1024px){
+    html{
+        font-size: 56.25%;
     }
-
-    /* footer section */
-    footer {
-        height: auto;
-        padding-top: 2.5vh;
+    body{
+        padding: 15px;
+        
+    }
+    h1{
+        font-size: 4rem;
+    }
+    h2{
+        font-size: 1.8rem;
+    }
+    h3{
+        font-size: 3rem;
+    }
+    h4{
         font-size: 2rem;
     }
+    p, a{
+        font-size:2rem;
+    }
+    .menu{
+        width: 100%;
+        max-width: 800px;
+        padding: 30px;
+    }
+    .menu-item{
+        width: 48%;
+        font-size: 1.3rem;
+    }
+    .menu-item h3{
+        font-size: 1.4rem;
+    }
+    .menu-item p{
+        font-size: 1.1rem;
+    }
+    .menu-item .price{
+        font-size: 1.8rem;
+    }
+    footer{
+        font: size 2.5rem;
+    }
+
+}
+.header{
+    height: auto;
 }
